@@ -13,9 +13,7 @@
 (defn webSockUrl [response]
   (let [error (response :error)]
     (if error
-      (do
-        (println "Slack error: " error)
-        (System/exit 1))
+      (throw (java.io.IOException. (str "Slack error: " error)))
       (response :url)))
 )
 
@@ -37,11 +35,17 @@
 
 (defn -main
   [& args]
-  (let [url (rtmStart (first args))]
-  (println "Connecting...")
-  (with-open [client (http/create-client)]
-    (let [ws (http/websocket client
-                             url
-                             :text handle-message)]
-      (loop [] (recur)))))
+  (try
+    (let [url (rtmStart (first args))]
+      (println "Connecting...")
+      (with-open [client (http/create-client)]
+        (let [ws (http/websocket client
+                                 url
+                                 :text handle-message)]
+          (loop [] (recur)))))
+    (catch java.io.IOException ex
+      (do
+        (println (.getMessage ex))
+        (System/exit 1)))
+  )
 )
