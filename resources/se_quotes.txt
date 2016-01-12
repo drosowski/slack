@@ -1,0 +1,964 @@
+[{
+	"text": "The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures. (This very tractability has its own problems.) ",
+	"author": "Fred Brooks"
+},
+{
+	"text": "The best way to get a project done faster is to start sooner ",
+	"author": "Jim Highsmith"
+},
+{
+	"text": "Brooks Law: \"Adding manpower to a late software project makes it later!\"",
+    "author": ""
+},
+{
+	"text": "Brian Russell's Laws of Software Relativity (cf. Belady and Lehman's Laws of Software Evolution) * As a software project approaches release, its mass increases. *The energy required to release a software project is inversely proportional to the time before a scheduled release. *It takes infinite energy to release a finished product on time; therefore, all software projects are both incomplete and late. *Time is relative to the observer of a software project. The last month of development appears to an outside observer to take a year. *If a software project becomes too large, it will collapse into a black hole. Time and money are absorbed but nothing ever comes out. ",
+	"author": "Usenet post "
+},
+{
+	"text": "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning. ",
+	"author": "Rich Cook "
+},
+{
+	"text": "The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time. ",
+	"author": "Tom Cargill "
+},
+{
+	"text": "Even the best planning is not so omniscient as to get it right the first time. ",
+	"author": "Fred Brooks"
+},
+{
+	"text": "How does a project get to be a year late?... One day at a time. ",
+	"author": "Fred Brooks"
+},
+{
+	"text": "The bearing of a child takes nine months, no matter how many women are assigned. Many software tasks have this characteristic because of the sequential nature of debugging. ",
+	"author": "Fred Brooks"
+},
+{
+	"text": "Plan to throw one (implementation) away; you will, anyhow. ",
+	"author": "Fred Brooks"
+},
+{
+	"text": "The fundamental problem with program maintenance is that fixing a defect has a substantial (20-50 percent) chance of introducing another. So the whole process is two steps forward and one step back.. ",
+	"author": "Fred Brooks"
+},
+{
+	"text": "Every good work of software starts by scratching a developer's personal itch ",
+	"author": "source"
+},
+{
+	"text": "Good programmers know what to write. Great ones know what to rewrite (and reuse). ",
+	"author": "source"
+},
+{
+	"text": "Perfection (in design) is achieved not when there is nothing more to add, but rather when there is nothing more to take away ",
+	"author": "Antoine de Saint-Exupery "
+},
+{
+	"text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand. ",
+	"author": "Martin Fowler "
+},
+{
+	"text": "Program testing can be used to show the presence of bugs, but never to show their absence! ",
+	"author": "Edsger Dijkstra "
+},
+{
+	"text": "Testing is the process of comparing the invisible to the ambiguous, so as to avoid the unthinkable happening to the anonymous. ",
+	"author": "James Bach "
+},
+{
+	"text": "Beware of bugs in the above code; I have only proved it correct, not tried it . ",
+	"author": "Knuth "
+},
+{
+	"text": "We try to solve the problem by rushing through the design process so that enough time is left at the end of the project to uncover the errors that were made because we rushed through the design process ",
+	"author": "Glenford Myers "
+},
+{
+	"text": "Programs should be written and polished until they acquire publication quality.",
+	"author": "Niklaus Wirth"
+},
+{
+	"text": "Time pressure gradually corrupts an engineer\u2019s standard of quality and perfection. It has a detrimental effect on people as well as products",
+	"author": "Niklaus Wirth"
+},
+{
+	"text": "The belief that complex systems require armies of designers and programmers is wrong. A system that is not understood in its entirety, or at least to a significant degree of detail by a single individual, should probably not be built. --Niklaus Wirth [ source]",
+	"author": "Niklaus Wirth"
+},
+{
+	"text": "A primary cause of complexity is that software vendors uncritically adopt almost any feature that users want.",
+	"author": "Niklaus Wirth"
+},
+{
+	"text": "Prolific programmers contribute to certain disaster.",
+	"author": "Niklaus Wirth"
+},
+{
+	"text": "Wirth's law: Software gets slower faster than hardware gets faster.",
+	"author": "Niklaus Wirth"
+},
+{
+	"text": "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilisation.",
+	"author": "Gerald Weinberg "
+},
+{
+	"text": "Documentation is the castor oil of programming. Managers think it is good for programmers and programmers hate it!.",
+	"author": "Gerald Weinberg "
+},
+{
+	"text": "Managers often form a [programming] team which by any reasonable judgment cannot perform the designated task in the allotted time. Inevitably the team is given an extension when the time limit is reached and the reality must be faced. Had it been faced earlier, the work could probably have been organized differently - in recognition of the longer schedule - and thus produced, in the end, more quickly.",
+	"author": "Gerald Weinberg "
+},
+{
+	"text": "Programming can be fun, so can cryptography; however they should not be combined.",
+	"author": "Kreitzberg and Shneiderman "
+},
+{
+	"text": "Let us change our traditional attitude to the construction of programs. Instead of imagining that our main task is to instruct a computer what to to, let us concentrate rather on explaining to human beings what we want a computer to do.",
+	"author": "Donald Knuth "
+},
+{
+	"text": "Good code is its own best documentation. As you\u2019re about to add a comment, ask yourself, \u2018How can I improve the code so that this comment isn\u2019t needed?\u2019 Improve the code and then document it to make it even clearer.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "The job of the average manager requires a shift in focus every few minutes. The job of the average software developer requires that the developer not shift focus more often than every few hours.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "It's OK to figure out murder mysteries, but you shouldn't need to figure out code. You should be able to read it.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "Testing by itself does not improve software quality. Test results are an indicator of quality, but in and of themselves, they don't improve it. Trying to improve software quality by increasing the amount of testing is like trying to lose weight by weighing yourself more often. What you eat before you step onto the scale determines how much you will weigh, and the software development techniques you use determine how many errors testing will find. If you want to lose weight, don't buy a new scale; change your diet. If you want to improve your software, don't test more; develop better.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "A brute force solution that works is better than an elegant solution that doesn't work.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "Good visual layout shows the logical structure of a program.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "Even when you have skilled, motivated, hard-working people, the wrong team structure can undercut their efforts instead of catapulting them to success. A poor team structure can increase development time, reduce quality, damage morale, increase turnover, and ultimately lead to project cancellation.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "It's better to wait for a productive programmer to become available than it is to wait for the first available programmer to become productive.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "Software projects fail for one of two general reasons: the project team lacks the knowledge to conduct a software project successfully, or the project team lacks the resolve to conduct a project effectively.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "In software, the chain isn't as strong as its weakest link; it's as weak as all the weak links multiplied together.",
+	"author": "Steve McConnell "
+},
+{
+	"text": "... the designer of a new system must not only be the implementor and the first large-scale user; the designer should also write the first user manual. ... If I had not participated fully in all these activities, literally hundreds of improvements would never have been made, because I would never have thought of them or perceived why they were important.",
+	"author": "Donald Knuth "
+},
+{
+	"text": "An organization that treats its programmers as morons will soon have programmers that are willing and able to act like morons only. ",
+	"author": "Bjarne Stroustrup "
+},
+{
+	"text": "Design and programming are human activities; forget that and all is lost. ",
+	"author": "Bjarne Stroustrup "
+},
+{
+	"text": "Before software can be reusable it first has to be usable. ",
+	"author": "Ralph Johnson "
+},
+{
+	"text": "If you think your management doesn\u2019t know what it\u2019s doing or that your organisation turns out low-quality software crap that embarrasses you, then leave. -- ",
+	"author": "Edward Yourdon, Rise and Resurrection of the American Programmer "
+},
+{
+	"text": "The most important single aspect of software development is to be clear about what you are trying to build. ",
+	"author": "Bjarne Stroustrup "
+},
+{
+	"text": "Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris. -- ",
+	"author": "Larry Wall "
+},
+{
+	"text": "Real programmers can write assembly code in any language. -- ",
+	"author": "Larry Wall "
+},
+{
+	"text": "We all agree on the necessity of compromise. We just can't agree on when it's necessary to compromise. -- ",
+	"author": "Larry Wall "
+},
+{
+	"text": "I think it's a new feature. Don't tell anyone it was an accident. -- ",
+	"author": "Larry Wall "
+},
+{
+	"text": "Theory is when you know something, but it doesn\u2019t work. Practice is when something works, but you don\u2019t know why. Programmers combine theory and practice: Nothing works and they don\u2019t know why.",
+	"author": "Unknown "
+},
+{
+	"text": "The process of preparing programs for a digital computer is especially attractive, not only because it can be economically and scientifically rewarding, but also because it can be an aesthetic experience much like composing poetry or music.",
+	"author": "Donald Knuth "
+},
+{
+	"text": "For every complex problem there is an answer that is clear, simple, and wrong.",
+	"author": "H. L. Mencken "
+},
+{
+	"text": "Good programmers use their brains, but good guidelines save us having to think out every case. ",
+	"author": "Francis Glassborow "
+},
+{
+	"text": "Up to a point, it is better to just let the snags [bugs] be there than to spend such time in design that there are none. --Alan M. Turing [ source]",
+	"author": "Alan M. Turing  "
+},
+{
+	"text": "Don\u2019t document bad code -- rewrite it. --Kernighan and Plauger [ source]",
+	"author": "Kernighan and Plauger "
+},
+{
+	"text": "The price of reliability is the pursuit of the utmost simplicity. It is a price which the very rich may find hard to pay.",
+	"author": "C.A.R. Hoare "
+},
+{
+	"text": "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.",
+	"author": "C.A.R. Hoare "
+},
+{
+	"text": "Premature optimization is the root of all evil in programming.",
+	"author": "C.A.R. Hoare "
+},
+{
+	"text": "You cannot teach beginners top-down programming, because they don't know which end is up.",
+	"author": "C.A.R. Hoare "
+},
+{
+	"text": "The key to performance is elegance, not battalions of special cases. ",
+	"author": "Jon Bentley and Doug McIlroy "
+},
+{
+	"text": "A complex system that works is invariably found to have evolved from a simple system that works. ",
+	"author": "John Gall "
+},
+{
+	"text": "Adding last-minute features, whether in response to competitive pressure, as a developer\u2019s pet feature, or on the whim of management, causes more bugs in software than almost anything else. ",
+	"author": "John Robbins "
+},
+{
+	"text": "Inside every large program, there is a small program trying to get out.",
+	"author": "C.A.R. Hoare "
+},
+{
+	"text": "Programs must be written for people to read, and only incidentally for machines to execute. ",
+	"author": "Abelson and Sussman "
+},
+{
+	"text": "The software isn't finished until the last user is dead.",
+	"author": "Anonymous "
+},
+{
+	"text": "It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures. ",
+	"author": ""
+},
+{
+	"text": "The bitterness of poor quality remains long after the sweetness of meeting the schedule has been forgotten.",
+	"author": "Anonymous "
+},
+{
+	"text": "Why do we never have time to do it right, but always have time to do it over?.",
+	"author": "Anonymous "
+},
+{
+	"text": "The goal of product management is customer satisfaction. The product management role is positioned to achieve this by acting as the customer advocate to the team and as the team advocate to the customer. It is important to distinguish between the customer and the end user\u2014the customer is the one who pays for the product while the end user is the one who uses the product.",
+	"author": "Anonymous "
+},
+{
+	"text": "The goal of Computer Science is to build something that will last at least until we've finished building it.",
+	"author": "Anonymous "
+},
+{
+	"text": "Re-use before you buy before you build.",
+	"author": "Anonymous "
+},
+{
+	"text": "Better train people and risk they leave - than do nothing and risk they stay.",
+	"author": "Anonymous "
+},
+{
+	"text": "There is not now, and never will be, a language in which it is the least bit difficult to write bad programs.",
+	"author": "Anonymous "
+},
+{
+	"text": "Building large applications is still really difficult. Making them serve an organisation well for many years is almost impossible.",
+	"author": "Malcolm P Atkinson "
+},
+{
+	"text": "We have to stop optimizing for programmers and start optimizing for users. ",
+	"author": "Jeff Atwood "
+},
+{
+	"text": "A program is never less than 90% complete, and never more than 95% complete. ",
+	"author": "Terry Baker "
+},
+{
+	"text": "Optimism is an occupational hazard of programming: feedback is the treament. ",
+	"author": "Kent Beck "
+},
+{
+	"text": "A good threat is worth a thousand tests. ",
+	"author": "Boris Beizer, about publicizing test cases to programmers, in \"Software testing techniques\" "
+},
+{
+	"text": "More than the act of testing, the act of designing tests is one of the best bug preventers known. The thinking that must be done to create a useful test can discover and eliminate bugs before they are coded - indeed, test-design thinking can discover and eliminate bugs at every stage in the creation of software, from conception to specification, to design, coding and the rest. ",
+	"author": "Boris Beizer, in \"Software testing techniques\" "
+},
+{
+	"text": "If you can't test it, don't build it. If you don't test it, rip it out. ",
+	"author": "Boris Beizer, in \"Software testing techniques\" "
+},
+{
+	"text": "Bugs lurk in corners and congregate at boundaries. ",
+	"author": "Boris Beizer, in \"Software testing techniques\" "
+},
+{
+	"text": "Walking on water and developing software from a specification are easy if both are frozen. ",
+	"author": "Edward V. Berard "
+},
+{
+	"text": "Agile methods derive much of their agility by relying on the tacit knowledge embodied in the team, rather than writing the knowleadge down in plans. ",
+	"author": "Barry Boehm "
+},
+{
+	"text": "Poor management can increase software costs more rapidly than any other factor. ",
+	"author": "Barry Boehm "
+},
+{
+	"text": "Just because you don't know a technology, doesn't mean you won't be called upon to work with it. ",
+	"author": "Mike Bongiovanni "
+},
+{
+	"text": "The most likely way for the world to be destroyed, most experts agree, is by accident. That's where we come in; we're computer professionals. We cause accidents. ",
+	"author": "Nathaniel S. Borenstein "
+},
+{
+	"text": "Documentation is like sex; when it's good, it's very, very good, and when it's bad, it's better than nothing. ",
+	"author": "Dick Brandon "
+},
+{
+	"text": "The hardest part of the software task is arriving at a complete and consistent specification, and much of the essence of building a program is in fact the debugging of the specification. --Frederick P. Brooks, in \"No silver bullet\" ",
+	"author": ""
+},
+{
+	"text": "A little retrospection shows that although many fine, useful software systems have been designed by committees and built as part of multipart projects, those software systems that have excited passionate fans are those that are the products of one or a few designing minds, great designers. --Frederick P. Brooks, in \"No silver bullet\" ",
+	"author": ""
+},
+{
+	"text": "Good judgment comes from experience, and experience comes from bad judgment. --Frederick P. Brooks ",
+	"author": ""
+},
+{
+	"text": "Any sufficiently advanced bug is indistinguishable from a feature.",
+	"author": "Bruce Brown "
+},
+{
+	"text": "Analysis occurs only when the domain expert is in the room (otherwise it is pseudo-analysis) ",
+	"author": "Brad Kain, quoted in \"UML Distilled\""
+},
+{
+	"text": "Ugly programs are like ugly suspension bridges: they're much more liable to collapse than pretty ones, because the way humans (especially engineer-humans) perceive beauty is intimately related to our ability to process and understand complexity.",
+	"author": "Eric S. Raymond "
+},
+{
+	"text": "Simplicity is prerequisite for reliability",
+	"author": "Edsger W.Dijkstra "
+},
+{
+	"text": "Rules of Optimization: Rule 1: Don't do it. Rule 2 (for experts only): Don't do it yet.",
+	"author": "M.A. Jackson "
+},
+{
+	"text": "More computing sins are committed in the name of efficiency (without necessarily achieving it) than for any other single reason - including blind stupidity.",
+	"author": "W.A. Wulf "
+},
+{
+	"text": "The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague.",
+	"author": "Edsger Dijkstra "
+},
+{
+	"text": "Correctness is clearly the prime quality. If a system does not do what it is supposed to do, then everything else about it matters little.",
+	"author": "Bertrand Meyer "
+},
+{
+	"text": "An API that isn't comprehensible isn't usable.",
+	"author": "James Gosling "
+},
+{
+	"text": "Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law. -- ",
+	"author": ""
+},
+{
+	"text": "Copy and paste is a design error. --David Parnas [source]",
+	"author": "David Parnas  "
+},
+{
+	"text": "One principle problem of educating software engineers is that they will not use a new method until they believe it works and, more importantly, that they will not believe the method will work until they see it for themselves. ",
+	"author": "Humphrey, W.S., \"The Personal Software Process\" "
+},
+{
+	"text": "Eagleson's law: Any code of your own that you haven't looked at for six or more months might as well have been written by someone else. -- ",
+	"author": ""
+},
+{
+	"text": "Any fool can use a computer. Many do.",
+	"author": "Ted Nelson "
+},
+{
+	"text": "Incorrect documentation is often worse than no documentation.",
+	"author": "Bertrand Meyer "
+},
+{
+	"text": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
+	"author": "Brian W. Kernighan "
+},
+{
+	"text": "It's not at all important to get it right the first time. It's vitally important to get it right the last time.",
+	"author": "Andrew Hunt and David Thomas "
+},
+{
+	"text": "Make everything as simple as possible, but not simpler.",
+	"author": "Albert Einstein "
+},
+{
+	"text": "First, solve the problem. Then, write the code.",
+	"author": "John Johnson "
+},
+{
+	"text": "PHP is a minor evil perpetrated and created by incompetent amateurs, whereas Perl is a great and insidious evil, perpetrated by skilled but perverted professionals.",
+	"author": "Jon Ribbens "
+},
+{
+	"text": "Remember that there is no code faster than no code. ",
+	"author": "Taligent's Guide to Designing Programs "
+},
+{
+	"text": "More good code has been written in languages denounced as \"bad'' than in languages proclaimed \"wonderful'' -- much more. -- Bjarne Stroustrup, \"The Design and Evolution of C++\" (1994) [ source]",
+	"author": "Bjarne Stroustrup \"The Design and Evolution of C++\" (1994) "
+},
+{
+	"text": "Smart data structures and dumb code works a lot better than the other way around. -- Eric S. Raymond, \"The Cathedral and the Bazaar\" [ source]",
+	"author": "Eric S. Raymond \"The Cathedral and the Bazaar\" "
+},
+{
+	"text": "It's hard to read through a book on the principles of magic without glancing at the cover periodically to make sure it isn't a book on software design. -- Bruce Tognazzini [ source]",
+	"author": "Bruce Tognazzini  "
+},
+{
+	"text": "A language that doesn't have everything is actually easier to program in than some that do. ",
+	"author": "Dennis Ritchie "
+},
+{
+	"text": "... the purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise. -- Edsger W. Dijkstra, \"The Humble Programmer\" (1972) [ source]",
+	"author": "Edsger W. Dijkstra \"The Humble Programmer\" (1972) "
+},
+{
+	"text": "... the cost of adding a feature isn't just the time it takes to code it. The cost also includes the addition of an obstacle to future expansion. ... The trick is to pick the features that don't fight each other. ",
+	"author": "John Carmack "
+},
+{
+	"text": "Increasingly, people seem to misinterpret complexity as sophistication, which is baffling --- the incomprehensible should cause suspicion rather than admiration. ",
+	"author": "Niklaus Wirth "
+},
+{
+	"text": "One of the most dangerous (and evil) things ever injected into the project world is the notion of process maturity. Process maturity is for replicable manufacturing contexts. Projects are one-time shots. Replicability is never the primary issue on one-time shots. More evil than good has come from the notion that we should \"stick to the methodology.\" This is a recipe for non-adaptive death. I'd rather die by commission. ",
+	"author": "David Schmaltz "
+},
+{
+	"text": "The difference between a good and a poor architect is that the poor architect succumbs to every temptation and the good one resists it. ",
+	"author": "Ludwig Wittgenstein "
+},
+{
+	"text": "Refactoring provides enough energy to a system for it to relax into a new and more comfortable state, a new local minimum.",
+	"author": "Kevlin Henney \"The Imperial Clothing Crisis\" (2002) "
+},
+{
+	"text": "Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defense against complexity. ",
+	"author": "David Gelernter, \"Machine Beauty\", Basic Books (1998) "
+},
+{
+	"text": "Fools ignore complexity; pragmatists suffer it; experts avoid it; geniuses remove it. ",
+	"author": "Alan Perlis "
+},
+{
+	"text": "...Simplifications have had a much greater long-range scientific impact than individual feats of ingenuity. .... Simplicity and elegance are unpopular because they require hard work and discipline to achieve and education to be appreciated.",
+	"author": "Edsger W. Dijkstra "
+},
+{
+	"text": "Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius - and a lot of courage - to move in the opposite direction. ",
+	"author": "Albert Einstein "
+},
+{
+	"text": "The structure of a system reflects the structure of the organization that built it. ",
+	"author": "R. Fairley "
+},
+{
+	"text": "The unavoidable price of reliability is simplicity. ",
+	"author": "C.A.R. Hoare "
+},
+{
+	"text": "Controlling complexity is the essence of computer programming. ",
+	"author": "Brian Kernighan "
+},
+{
+	"text": "Complexity is a sign of technical immaturity. Simplicity of use is the real sign of a well design product whether it is an ATM or a Patriot missile. ",
+	"author": "Daniel T. Ling "
+},
+{
+	"text": "Simplicity does not precede complexity, but follows it. ",
+	"author": "Alan J. Perlis "
+},
+{
+	"text": "Computer Science is the first engineering discipline in which the complexity of the objects created is limited solely by the skill of the creator, and not by the strength of raw materials. ",
+	"author": "B. Reid "
+},
+{
+	"text": "Technical skill is mastery of complexity, while creativity is mastery of simplicity. ",
+	"author": "E. Christopher Zeeman "
+},
+{
+	"text": "Architect: Someone who knows the difference between that which could be done and that which should be done. ",
+	"author": "Larry McVoy "
+},
+{
+	"text": "If the automobile had followed the same development cycle as the computer, a Rolls-Royce would today cost $100, get a million miles per gallon, and explode once a year, killing everyone inside. ",
+	"author": "Robert X. Cringely "
+},
+{
+	"text": "There's an old story about the person who wished his computer were as easy to use as his telephone. That wish has come true, since I no longer know how to use my telephone. ",
+	"author": "Bjarne Stroustrup "
+},
+{
+	"text": "A common mistake that people make when trying to design something completely foolproof was to underestimate the ingenuity of complete fools. ",
+	"author": "Douglas Adams "
+},
+{
+	"text": "If our designs are failing due to the constant rain of changing requirements, it is our designs that are at fault. We must somehow find a way to make our designs resilient to such changes and protect them from rotting. ",
+	"author": "Robert C. Martin "
+},
+{
+	"text": "If you cannot grok the overall structure of a program while taking a shower, you are not ready to code it. ",
+	"author": "Richard Pattis "
+},
+{
+	"text": "How good the design is doesn't matter near as much as whether the design is getting better or worse. If it is getting better, day by day, I can live with it forever. If it is getting worse, I will die. ",
+	"author": "Kent Beck "
+},
+{
+	"text": "Nothing resolves design issues like an implementation. ",
+	"author": "J. D. Horton "
+},
+{
+	"text": "By the time [the Leaning Tower of Pisa] was ten percent built, everyone knew it would be a total disaster. But the investment was so big they felt compelled to go on. Since its completion, it cost a fortune to maintain and is still in danger of collapsing. There are no plans to replace it, since it was never needed in the first place. I expect every installation has its own pet software which is analogous to the above. ",
+	"author": "Ken Iverson "
+},
+{
+	"text": "In theory, there is no difference between theory and practice. But, in practice, there is. ",
+	"author": "Jan L. A. van de Snepscheut "
+},
+{
+	"text": "If you lie to the compiler, it will get its revenge. ",
+	"author": "Henry Spencer "
+},
+{
+	"text": "Trying to outsmart a compiler defeats much of the purpose of using one. ",
+	"author": "Kernighan & Plauger, The Elements of Programming Style "
+},
+{
+	"text": "Once a new technology starts rolling, if you're not part of the steamroller, you're part of the road. ",
+	"author": "Stewart Brand "
+},
+{
+	"text": "Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary. ",
+	"author": ""
+},
+{
+	"text": "Just because the standard provides a cliff in front of you, you are not necessarily required to jump off it. ",
+	"author": "Norman Diamond "
+},
+{
+	"text": "If you have a procedure with ten parameters, you probably missed some. ",
+	"author": ""
+},
+{
+	"text": "There are two ways to write error-free programs; only the third works. ",
+	"author": "Alan J. Perlis "
+},
+{
+	"text": "I did say something along the lines of \"C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do, it blows your whole leg off.\" ",
+	"author": "Bjarne Stroustrup "
+},
+{
+	"text": "UNIX is simple. It just takes a genius to understand its simplicity ",
+	"author": "Dennis Ritchie "
+},
+{
+	"text": "When someone says, \"I want a programming language in which I need only say what I want done,\" give him a lollipop. ",
+	"author": "Alan Perlis "
+},
+{
+	"text": "You can't have great software without a great team, and most software teams behave like dysfunctional families. ",
+	"author": "Jim McCarthy "
+},
+{
+	"text": "That's the thing about people who think they hate computers. What they really hate is lousy programmers. ",
+	"author": "Larry Niven and Jerry Pournelle Oath of Fealty "
+},
+{
+	"text": "Einstein argued that there must be simplified explanations of nature, because God is not capricious or arbitrary. No such faith comforts the software engineer.",
+	"author": "Fred Brooks, Jr. "
+},
+{
+	"text": "As we said in the preface to the first edition, C \"wears well as one's experience with it grows.\" With a decade more experience, we still feel that way. ",
+	"author": "Brian Kernighan and Dennis Ritchie "
+},
+{
+	"text": "Optimization hinders evolution. ",
+	"author": ""
+},
+{
+	"text": "C++ tries to guard against Murphy, not Machiavelli. ",
+	"author": "Damian Conway "
+},
+{
+	"text": "I have always found that plans are useless, but planning is indispensable. ",
+	"author": "Dwight Eisenhower "
+},
+{
+	"text": "Perl is another example of filling a tiny, short-term need, and then being a real problem in the longer term. ",
+	"author": "Alan Kay "
+},
+{
+	"text": "It is practically impossible to teach good programming style to students that have had prior exposure to Basic; as potential programmers they are mentally mutilated beyond hope of regeneration. ",
+	"author": "Edsger Dijkstra "
+},
+{
+	"text": "Comparing to another activity is useful if it helps you formulate questions, it's dangerous when you use it to justify answers. ",
+	"author": "Martin Fowler "
+},
+{
+	"text": "There will always be things we wish to say in our programs that in all known languages can only be said poorly. ",
+	"author": ""
+},
+{
+	"text": "Every program is a part of some other program and rarely fits. ",
+	"author": ""
+},
+{
+	"text": "Style distinguishes excellence from accomplishment. ",
+	"author": "James Coplien "
+},
+{
+	"text": "Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't. ",
+	"author": "Alan J. Perlis"
+},
+{
+	"text": "The most amazing achievement of the computer software industry is its continuing cancellation of the steady and staggering gains made by the computer hardware industry. ",
+	"author": "Henry Petroski"
+},
+{
+	"text": "Technology is dominated by two types of people: Those who understand what they do not manage. Those who manage what they do not understand. ",
+	"author": "Putt's Law"
+},
+{
+	"text": "The perfect project plan is possible if one first documents a list of all the unknowns. ",
+	"author": "Bill Langley"
+},
+{
+	"text": "There's no obfuscated Perl contest because it's pointless. ",
+	"author": "Jeff Polk "
+},
+{
+	"text": "Java is, in many ways, C++--. ",
+	"author": "Michael Feldman "
+},
+{
+	"text": "Software and cathedrals are much the same - first we build them, then we pray. ",
+	"author": "Anonymous "
+},
+{
+	"text": "If debugging is the process of removing bugs, then programming must be the process of putting them in. ",
+	"author": "Edsger Dijkstra "
+},
+{
+	"text": "No matter how slick the demo is in rehearsal, when you do it in front of a live audience the probability of a flawless presentation is inversely proportional to the number of people watching, raised to the power of the amount of money involved. ",
+	"author": "Mark Gibbs "
+},
+{
+	"text": "It is easier to write an incorrect program than understand a correct one. ",
+	"author": ""
+},
+{
+	"text": "If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program. ",
+	"author": "Linux 1.3.53 CodingStyle documentation "
+},
+{
+	"text": "A Perl program is correct if it gets the job done before your boss fires you. ",
+	"author": "Larry Wall "
+},
+{
+	"text": "I have a pretty major problem with a language where one of the most common variables has the name $_ ",
+	"author": "Brian Hook, about PERL "
+},
+{
+	"text": "The evolution of languages: FORTRAN is a non-typed language. C is a weakly typed language. Ada is a strongly typed language. C++ is a strongly hyped language. ",
+	"author": "Ron Sercely "
+},
+{
+	"text": "He who hasn't hacked assembly language as a youth has no heart. He who does as an adult has no brain. ",
+	"author": "John Moore "
+},
+{
+	"text": "BASIC - A programming language. Related to certain social diseases in that those who have it will not admit it in polite company. ",
+	"author": "Anonymous "
+},
+{
+	"text": "With enough eyes, all bugs are shallow. ",
+	"author": "Eric S. Raymond "
+},
+{
+	"text": "The camel has evolved to be relatively self-sufficient. On the other hand, the camel has not evolved to smell good. Neither has Perl. ",
+	"author": "Larry Wall "
+},
+{
+	"text": "Don't get suckered in by the comments ... they can be terribly misleading. ",
+	"author": "Dave Storer "
+},
+{
+	"text": "We know about as much about software quality problems as they knew about the Black Plague in the 1600s. We've seen the victims' agonies and helped burn the corpses. We don't know what causes it; we don't really know if there is only one disease. We just suffer -- and keep pouring our sewage into our water supply. ",
+	"author": "Tom Van Vleck "
+},
+{
+	"text": "If something is worth doing once, it's worth building a tool to do it. ",
+	"author": ""
+},
+{
+	"text": "If you think good architecture is expensive, try bad architecture. ",
+	"author": "Brian Foote and Joseph Yoder "
+},
+{
+	"text": "When we use a language, we should commit ourselves to knowing it, being able to read it, and writing it idiomatically. ",
+	"author": "Ron Jeffries "
+},
+{
+	"text": "I don't know or trust Demeter. ",
+	"author": "David Brady "
+},
+{
+	"text": "The ideal engineer is a composite ... he is not a scientist, he is not a mathematician, he is not a sociologist, or a writer; but he may use the knowledge and techniques of any or all of these disciplines in solving engineering problems. ",
+	"author": "N. W. Dougherty "
+},
+{
+	"text": "One of the great skills in using any language is knowing what not to use, what not to say. ... There's that simplicity thing again. ",
+	"author": "Ron Jeffries "
+},
+{
+	"text": "Good engineering is characterized by gradual, stepwise refinement of products that yields increased performance under given constraints and with given resources. ",
+	"author": "Niklaus Wirth "
+},
+{
+	"text": "Programming languages should be designed not by piling feature on top of feature, but by removing the weaknesses and restrictions that make additional features appear necessary. ",
+	"author": "Revised Report on the Algorithmic Language Scheme "
+},
+{
+	"text": "A designer can mull over complicated designs for months. Then suddenly the simple, elegant, beautiful solution occurs to him. When it happens to you, it feels as if God is talking! And maybe He is. ",
+	"author": "Leo Frankowski (in The Cross-Time Engineer) "
+},
+{
+	"text": "It should be noted that no ethically-trained software engineer would ever consent to write a DestroyBaghdad procedure. Basic professional ethics would instead require him to write a DestroyCity procedure, to which Baghdad could be given as a parameter. ",
+	"author": "Nathaniel S. Borenstein"
+},
+{
+	"text": "The problem with using C++ ... is that there's already a strong tendency in the language to require you to know everything before you can do anything. ",
+	"author": "Larry Wall"
+},
+{
+	"text": "If a million monkeys were typing on computers, one of them will eventually write a Java program. The rest of them will write Perl programs. ",
+	"author": "Anonymous "
+},
+{
+	"text": "Unix was not designed to stop people from doing stupid things, because that would also stop them from doing clever things. ",
+	"author": "Doug Gwyn"
+},
+{
+	"text": "First you listen to the users; then you ignore them. ",
+	"author": "Ken Arnold "
+},
+{
+	"text": "The hardest part of design ... is keeping features out. ",
+	"author": "Donald Norman "
+},
+{
+	"text": "Computers are high-speed idiots, programmed by low-speed idiots ",
+	"author": ""
+},
+{
+	"text": "You know you're on the right track with code changes when you spend the majority of your time deleting code. ",
+	"author": ""
+},
+{
+	"text": "The C language combines all the power of assembly language with all the ease-of-use of assembly language. ",
+	"author": "Mark Pearce "
+},
+{
+	"text": "The use of COBOL cripples the mind; its teaching should, therefore, be regarded as a criminal offense. ",
+	"author": "Edsgar Dijkstra "
+},
+{
+	"text": "The key to understanding recursion is to begin by understanding recursion. The rest is easy. ",
+	"author": "Koenig/Moo, Accelerated C++ "
+},
+{
+	"text": "Linux sucks twice as fast and 10 times more reliably, and since you have the source, it's your fault. ",
+	"author": ""
+},
+{
+	"text": "If Java had true garbage collection, most programs would delete themselves upon execution. ",
+	"author": ""
+},
+{
+	"text": "Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. ",
+	"author": ""
+},
+{
+	"text": "... programming requires more concentration than other activities. It's the reason programmers get upset about 'quick interruptions' - such interruptions are tantamount to asking a juggler to keep three balls in the air and hold your groceries at the same time.\" ",
+	"author": "Steve McConnell, Code Complete "
+},
+{
+	"text": "Avoiding complexity reduces bugs. ",
+	"author": "Linus Torvalds "
+},
+{
+	"text": "C++ : an octopus made by nailing extra legs onto a dog. ",
+	"author": ""
+},
+{
+	"text": "Python: executable pseudocode. Perl: executable line noise. ",
+	"author": ""
+},
+{
+	"text": "In a room full of top software designers, if two agree on the same thing, that's a majority. ",
+	"author": "Bill Curtis "
+},
+{
+	"text": "Programming in C++ is premature optimization. ",
+	"author": ""
+},
+{
+	"text": "If at first you don't succeed, call it version 1.0 ",
+	"author": "Pat Rice "
+},
+{
+	"text": "It's harder than you might think to squander millions of dollars, but a flawed software development process is a tool well suited to the job. ",
+	"author": "Alan Cooper"
+},
+{
+	"text": "One: demonstrations always crash. And two: the probability of them crashing goes up exponentially with the number of people watching. ",
+	"author": "Steve Jobs "
+},
+{
+	"text": "About 90 percent of the downtime comes from, at most, 10 percent of the defects. ",
+	"author": "Barry Boehm"
+},
+{
+	"text": "In a software project team of 10, there are probably 3 people who produce enough defects to make them net negative producers. ",
+	"author": "Gordon Schulmeyer"
+},
+{
+	"text": "It's not the prevention of bugs but the recovery -- the ability to gracefully exterminate them -- that counts. ",
+	"author": "Victoria Livschitz"
+},
+{
+	"text": "When debugging, novices insert corrective code; experts remove defective code. ",
+	"author": "Richard Pattis"
+},
+{
+	"text": "Product quality has almost nothing to do with defects or their lack. ",
+	"author": "Tom DeMarco"
+},
+{
+	"text": "Every big computing disaster has come from taking too many ideas and putting them in one place. ",
+	"author": "Gordon Bell"
+},
+{
+	"text": "There has never been an unexpectedly short debugging period in the history of computers. ",
+	"author": "Steven Levy"
+},
+{
+	"text": "It has been discovered that C++ provides a remarkable facility for concealing the trival details of a program -- such as where its bugs are. ",
+	"author": "David Keppel"
+},
+{
+	"text": "Whoever thought of putting coders in noise-transparent cubicles needs to be beaten with a cluebat. ",
+	"author": "Anonymous Slashdotter "
+},
+{
+	"text": "Using Unix is the computing equivalent of listening only to music by David Cassidy. ",
+	"author": "Rob Pike "
+},
+{
+	"text": "Conceptual integrity is the most important consideration in system design. ",
+	"author": "Fred Brooks, \"The Mythical Man-Month\" "
+},
+{
+	"text": "Experience doesn't necessarily teach anything. ",
+	"author": "Gerald M. Weinberg, \"Understanding the Professional Programmer\" "
+},
+{
+	"text": "No matter what the problem is, it's always a people problem. ",
+	"author": "Gerald M. Weinberg "
+},
+{
+	"text": "I think there is a world market for maybe five computers ",
+	"author": "Thomas Watson, Chairman of IBM, 1943 "
+},
+{
+	"text": "There is no reason why anyone would want a computer in the home. ",
+	"author": "Ken Olson, Present, Chairman and founder of Digital Equipment Corporation, 1977"
+},
+{
+	"text": "But what... is it good for? ",
+	"author": "Engineer at the Advanced Computing Systems division of IBM, commenting on the microchip, 1968 "
+},
+{
+	"text": "I have traveled the length and breadth of this country and talked with the best people, and I can assure you that data processing is a fad that won't last out the year. ",
+	"author": "Editor in charge of business books for Prentice Hall, 1957"
+},
+{
+	"text": "While a calculator on the ENIAC is equipped with 10000 vacuum tubes and weighs 30 tons, computers of the future may have only 1000 vacuum tubes and weigh only 1.5 tons. ",
+	"author": "Popular mechanics, 1949 "
+},
+{
+	"text": "Hiring people to write code to sell is not the same as hiring people to design and build durable, usable, dependable software. ",
+	"author": "Larry Constantine [Beyond Chaos]"
+},
+{
+	"text": "If we play genie and grant client wishes, we are apt to construct castles of code in the air. ",
+	"author": "Larry Constantine [Beyond Chaos]"
+},
+{
+	"text": "In fast moving markets, adaptation is significantly more important than optimization. ",
+	"author": "Larry Constantine [Beyond Chaos]"
+},
+{
+	"text": "The best meetings get real work done. When your people learn that your meetings actually accomplish something, they will stop making excuses to be elsewhere. ",
+	"author": "Larry Constantine [Beyond Chaos]"
+},
+{
+	"text": "A dynamic duo who work well together can be worth any three people working in isolation. ",
+	"author": "Larry Constantine [Beyond Chaos]"
+}]

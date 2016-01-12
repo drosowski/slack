@@ -1,7 +1,7 @@
-(ns slack.core-test
+(ns slack.slackapi-test
   (:require [clojure.test :refer :all]
             [http.async.client :as http]
-            [slack.core :refer :all]))
+            [slack.slackapi :refer :all]))
 
 (deftest a-test
   (testing "should handle slack error"
