@@ -6,7 +6,7 @@
   (testing "should parse quotes properly"
     (let [quotes (parse-quotes "se_quotes.txt")]
       (is (not (empty? quotes)))
-      (let [firstquote (get quotes 1)]
+      (let [firstquote (get quotes 0)]
         (is (not (nil? (:author firstquote))))
         (is (not (nil? (:text firstquote))))))
   )
