@@ -28,20 +28,20 @@
 	webSockUrl)))
 )
 
-(defn handle-message [ws rawmsg]
-  (let [msg (respToMap rawmsg)]
-    (println msg))
-)
-
-(defn connect [apikey]
+(defn connect [apikey callbacks]
   (try
     (let [url (rtmStart apikey)]
       (println "Connecting...")
       (with-open [client (http/create-client)]
         (let [ws (http/websocket client
                                  url
-                                 :text handle-message)]
-          (println "Connection established!")
+                                 :text #(
+  (let [msg (respToMap %2)]
+    (cond
+      (= "hello" (:type msg)) (partial (:handle-hello callbacks) %1)
+      (= "message" (:type msg)) (partial (:handle-message callbacks) %1 %2)
+      :else (println msg)))
+          ))]
           (loop [] (recur)))))
     (catch java.io.IOException ex
       (do
