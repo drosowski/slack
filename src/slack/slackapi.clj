@@ -28,20 +28,29 @@
 	webSockUrl)))
 )
 
-(defn connect [apikey callbacks]
+(defprotocol SlackActions
+  "protocol defining what to do on various slack API events"
+  (handle-hello [self client] "Initial connect to slack websocket successful")
+  (handle-msg [self client msg] "Incoming message")
+)
+
+(defn handle-text [client rawmsg slack-actions]
+  (let [msg (respToMap rawmsg)]
+    (cond
+      (= "hello" (:type msg)) (handle-hello slack-actions client)
+      (= "message" (:type msg)) (handle-msg slack-actions client msg)
+      :else (println "Unknown: " rawmsg)))
+)
+ 
+
+(defn connect [apikey slack-actions]
   (try
     (let [url (rtmStart apikey)]
       (println "Connecting...")
       (with-open [client (http/create-client)]
         (let [ws (http/websocket client
                                  url
-                                 :text #(
-  (let [msg (respToMap %2)]
-    (cond
-      (= "hello" (:type msg)) (partial (:handle-hello callbacks) %1)
-      (= "message" (:type msg)) (partial (:handle-message callbacks) %1 %2)
-      :else (println msg)))
-          ))]
+                                 :text #(handle-text %1 %2 slack-actions))]
           (loop [] (recur)))))
     (catch java.io.IOException ex
       (do

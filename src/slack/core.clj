@@ -5,19 +5,14 @@
   (:require [slack.quotes :as quotes])
   (:gen-class))
 
-(defn handle-hello [ws]
-  (println "hello")
-  (websock/send ws :text "{\"id\": 1, \"type\": \"message\", \"channel\": \"G0GPBLL8M\", \"text\": \"foobaring\"}")
-)
-
-(defn handle-message [ws msg]
-  (println msg)
+(deftype MyActions []
+  api/SlackActions
+  (handle-hello [self client]
+    (websock/send client :text "{\"id\": 1, \"type\": \"message\", \"channel\": \"G0GPBLL8M\", \"text\": \"foobaring\"}"))
+  (handle-msg [self client msg] (println msg))
 )
 
 (defn -main
   [& args]
-  (api/connect (first args) {
-    :handle-hello handle-hello
-    :handle-message handle-message
-    })
+  (api/connect (first args) (MyActions.))
 )
