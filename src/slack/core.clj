@@ -8,8 +8,11 @@
 (deftype MyActions []
   api/SlackActions
   (handle-hello [self client]
-    (websock/send client :text "{\"id\": 1, \"type\": \"message\", \"channel\": \"G0GPBLL8M\", \"text\": \"foobaring\"}"))
-  (handle-msg [self client msg] (println msg))
+    (api/send-msg client "G0GPBLL8M" "This is quote bot speaking. Enter \"hitme quotebot!\" to be served!"))
+  (handle-msg [self client msg] 
+    (if (= "hitme quotebot!" (:text msg))
+      (api/send-msg client "G0GPBLL8M" (:text (quotes/random-quote)))
+      (println msg)))
 )
 
 (defn -main

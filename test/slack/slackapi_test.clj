@@ -1,6 +1,8 @@
 (ns slack.slackapi-test
   (:require [clojure.test :refer :all]
             [http.async.client :as http]
+            [http.async.client.websocket :as ws]
+            (clj-json [core :as json])
             [slack.slackapi :refer :all]))
 
     (deftype MyActions []
@@ -18,7 +20,12 @@
       (is (= "theurl" (rtmStart "token"))))
   )
   (testing "should call protocol functions for slack api events"
-    (is (= "hello" (handle-text {} "{ \"type\": \"hello\"}" (MyActions.))))
-    (is (= "msg" (handle-text {} "{ \"type\": \"message\"}" (MyActions.))))
+    (is (= "hello" (handle-text nil "{ \"type\": \"hello\"}" (MyActions.))))
+    (is (= "msg" (handle-text nil "{ \"type\": \"message\"}" (MyActions.))))
+  )
+  (testing "should increase id for each message sent"
+    (with-redefs [ws/send (fn [client key args] (json/parse-string args true))]
+      (is (= "1" ((send-msg nil "" "") :id)))
+      (is (= "2" ((send-msg nil "" "") :id))))
   )
 )

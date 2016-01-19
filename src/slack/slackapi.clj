@@ -1,5 +1,6 @@
 (ns slack.slackapi
   (:require [http.async.client :as http])
+  (:require [http.async.client.websocket :as websock])
   (:require (clj-json [core :as json]))
   (:gen-class))
 
@@ -58,5 +59,10 @@
         (System/exit 1))
     )
   )
+)
+
+(def msg-id (atom 0))
+(defn send-msg [client channel msg]
+  (websock/send client :text (json/generate-string {:id (str (swap! msg-id inc)), :type "message", :channel channel, :text msg}))
 )
 
