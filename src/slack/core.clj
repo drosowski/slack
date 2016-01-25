@@ -11,7 +11,9 @@
     (api/send-msg token "G0GPBLL8M" "This is quote bot speaking. Type \"#quote\" to be served!"))
   (handle-msg [self msg] 
     (if (= "#quote" (:text msg))
-      (api/send-msg token "G0GPBLL8M" (:text (quotes/random-quote)))
+      (let [quote (quotes/random-quote)]
+        (api/send-msg token "G0GPBLL8M" (:text quote))
+        (api/send-msg token "G0GPBLL8M" (str "-- " (:author quote))))
       (println msg)))
 )
 
