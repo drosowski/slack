@@ -32,14 +32,14 @@
 (defprotocol SlackActions
   "protocol defining what to do on various slack API events"
   (handle-hello [self client] "Initial connect to slack websocket successful")
-  (handle-msg [self client msg] "Incoming message")
+  (handle-msg [self msg] "Incoming message")
 )
 
 (defn handle-text [client rawmsg slack-actions]
   (let [msg (respToMap rawmsg)]
     (cond
       (= "hello" (:type msg)) (handle-hello slack-actions client)
-      (= "message" (:type msg)) (handle-msg slack-actions client msg)
+      (= "message" (:type msg)) (handle-msg slack-actions msg)
       :else (println "Unknown: " rawmsg)))
 )
  
@@ -61,8 +61,17 @@
   )
 )
 
-(def msg-id (atom 0))
-(defn send-msg [client channel msg]
-  (websock/send client :text (json/generate-string {:id (str (swap! msg-id inc)), :type "message", :channel channel, :text msg}))
+(defn send-msg [token channel msg]
+  (with-open [client (http/create-client)]
+    (let [resp (http/POST client "https://slack.com/api/chat.postMessage" :body 
+      {:token token, 
+       :channel channel, 
+       :username "QuoteBot", 
+       :icon_emoji ":neckbeard:", 
+       :text msg})]
+      (-> resp
+        http/await
+        http/string)))
 )
+
 

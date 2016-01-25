@@ -23,9 +23,4 @@
     (is (= "hello" (handle-text nil "{ \"type\": \"hello\"}" (MyActions.))))
     (is (= "msg" (handle-text nil "{ \"type\": \"message\"}" (MyActions.))))
   )
-  (testing "should increase id for each message sent"
-    (with-redefs [ws/send (fn [client key args] (json/parse-string args true))]
-      (is (= "1" ((send-msg nil "" "") :id)))
-      (is (= "2" ((send-msg nil "" "") :id))))
-  )
 )

@@ -5,17 +5,18 @@
   (:require [slack.quotes :as quotes])
   (:gen-class))
 
-(deftype MyActions []
+(deftype MyActions [token]
   api/SlackActions
   (handle-hello [self client]
-    (api/send-msg client "G0GPBLL8M" "This is quote bot speaking. Enter \"hitme quotebot!\" to be served!"))
-  (handle-msg [self client msg] 
-    (if (= "hitme quotebot!" (:text msg))
-      (api/send-msg client "G0GPBLL8M" (:text (quotes/random-quote)))
+    (api/send-msg token "G0GPBLL8M" "This is quote bot speaking. Type \"#quote\" to be served!"))
+  (handle-msg [self msg] 
+    (if (= "#quote" (:text msg))
+      (api/send-msg token "G0GPBLL8M" (:text (quotes/random-quote)))
       (println msg)))
 )
 
 (defn -main
   [& args]
-  (api/connect (first args) (MyActions.))
+  (let [token (first args)]
+    (api/connect token (MyActions. token)))
 )
