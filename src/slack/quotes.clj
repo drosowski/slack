@@ -16,6 +16,6 @@
 (def cached-quotes (memoize parse-quotes))
 
 (defn random-quote [&]
-  (let [quotes (cached-quotes "se_quotes.txt")]
+  (let [quotes (cached-quotes "se_quotes.json")]
     (get quotes (rand-int (- (count quotes) 1))))
 ) 
