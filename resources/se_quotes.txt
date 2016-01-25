@@ -215,11 +215,11 @@
 	"author": "Francis Glassborow "
 },
 {
-	"text": "Up to a point, it is better to just let the snags [bugs] be there than to spend such time in design that there are none. --Alan M. Turing [ source]",
+	"text": "Up to a point, it is better to just let the snags [bugs] be there than to spend such time in design that there are none.",
 	"author": "Alan M. Turing  "
 },
 {
-	"text": "Don\u2019t document bad code -- rewrite it. --Kernighan and Plauger [ source]",
+	"text": "Don\u2019t document bad code -- rewrite it.",
 	"author": "Kernighan and Plauger "
 },
 {
