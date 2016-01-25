@@ -39,8 +39,7 @@
   (let [msg (respToMap rawmsg)]
     (cond
       (= "hello" (:type msg)) (handle-hello slack-actions client)
-      (= "message" (:type msg)) (handle-msg slack-actions msg)
-      :else (println "Unknown: " rawmsg)))
+      (= "message" (:type msg)) (handle-msg slack-actions msg)))
 )
  
 
