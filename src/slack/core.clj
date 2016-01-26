@@ -8,17 +8,17 @@
 (deftype MyActions [token]
   api/SlackActions
   (handle-hello [self client]
-    (api/send-msg token "G0GPBLL8M" "This is quote bot speaking. Type \"#quote\" to be served!"))
+    (api/send-msg token (System/getenv "SLACK_CHANNEL") "This is quote bot speaking. Type \"#quote\" to be served!"))
   (handle-msg [self msg] 
-    (if (= "#quote" (:text msg))
-      (let [quote (quotes/random-quote)]
-        (api/send-msg token "G0GPBLL8M" (:text quote))
-        (api/send-msg token "G0GPBLL8M" (str "-- " (:author quote))))
+    (if (and (= "#quote" (:text msg)) (not (= "bot_message" (:subtype msg))))
+      (let [quote (quotes/random-quote) channel (System/getenv "SLACK_CHANNEL")]
+        (api/send-msg token channel (:text quote))
+        (api/send-msg token channel (str "-- " (:author quote))))
       nil))
 )
 
 (defn -main
   [& args]
-  (let [token (first args)]
+  (let [token (System/getenv "SLACK_TOKEN")]
     (api/connect token (MyActions. token)))
 )

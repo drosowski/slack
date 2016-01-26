@@ -8,7 +8,7 @@
     (deftype MyActions []
       SlackActions
       (handle-hello [self client] "hello")
-      (handle-msg [self client msg] "msg"))
+      (handle-msg [self msg] "msg"))
 
 (deftest a-test
   (testing "should handle slack error"
