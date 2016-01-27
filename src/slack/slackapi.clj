@@ -65,8 +65,8 @@
     (let [resp (http/POST client "https://slack.com/api/chat.postMessage" :body 
       {:token token, 
        :channel channel, 
-       :username "QuoteBot", 
-       :icon_emoji ":neckbeard:", 
+       :username (System/getenv "SLACK_NAME"), 
+       :icon_emoji (System/getenv "SLACK_EMOJI"), 
        :text msg})]
       (-> resp
         http/await
