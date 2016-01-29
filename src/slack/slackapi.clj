@@ -42,6 +42,11 @@
       (= "message" (:type msg)) (handle-msg slack-actions msg)))
 )
  
+(defn ping [client]
+  (proxy [java.util.TimerTask] []
+    (run []
+      (println "running")))
+)
 
 (defn connect [apikey slack-actions]
   (try
@@ -51,7 +56,10 @@
         (let [ws (http/websocket client
                                  url
                                  :text #(handle-text %1 %2 slack-actions))]
-          (loop [] (recur)))))
+          (doto (new java.util.Timer true) (.schedule ping 0 5000))
+          (loop [] 
+            (Thread/sleep 500)
+            (recur)))))
     (catch java.io.IOException ex
       (do
         (println (.getMessage ex))
