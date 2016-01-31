@@ -20,7 +20,7 @@
 
 (defn rtmStart [token]
   (with-open [client (http/create-client)]
-    (println "Authenticating to slack using token:" token)
+    (println "Authenticating to slack...")
     (let [response (http/GET client (str "https://slack.com/api/rtm.start?token=" token))]
       (-> response
         http/await
@@ -37,16 +37,21 @@
 
 (defn handle-text [client rawmsg slack-actions]
   (let [msg (respToMap rawmsg)]
+    (println "IN: " msg)
     (cond
       (= "hello" (:type msg)) (handle-hello slack-actions client)
       (= "message" (:type msg)) (handle-msg slack-actions msg)))
 )
  
+(def msg-id (atom 1))
 (defn ping [client]
   (proxy [java.util.TimerTask] []
     (run []
-      (println "running")))
+      (let [output {:id (swap! msg-id inc), :type "ping"}]
+        (println "PING: " output)
+        (websock/send client :text output))))
 )
+
 
 (defn connect [apikey slack-actions]
   (try
@@ -56,7 +61,7 @@
         (let [ws (http/websocket client
                                  url
                                  :text #(handle-text %1 %2 slack-actions))]
-          (doto (new java.util.Timer true) (.schedule ping 0 5000))
+          (doto (new java.util.Timer true) (.schedule (ping client) 0 10000))
           (loop [] 
             (Thread/sleep 500)
             (recur)))))

@@ -5,10 +5,10 @@
             (clj-json [core :as json])
             [slack.slackapi :refer :all]))
 
-    (deftype MyActions []
-      SlackActions
-      (handle-hello [self client] "hello")
-      (handle-msg [self msg] "msg"))
+(deftype MyActions []
+  SlackActions
+  (handle-hello [self client] "hello")
+  (handle-msg [self msg] "msg"))
 
 (deftest a-test
   (testing "should handle slack error"
