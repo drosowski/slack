@@ -6,7 +6,8 @@
   :dependencies [
     [org.clojure/clojure "1.7.0"], 
     [http.async.client "1.1.0"],
-    [clj-json "0.5.3"]]
+    [clj-json "0.5.3"],
+    [overtone/at-at "1.2.0"]]
   :main ^:skip-aot slack.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

@@ -1,7 +1,7 @@
 (ns slack.slackapi
   (:require [http.async.client :as http])
-  (:require [http.async.client.websocket :as websock])
   (:require (clj-json [core :as json]))
+  (:require (overtone [at-at :as at]))
   (:gen-class))
 
 
@@ -45,33 +45,13 @@
  
 (def msg-id (atom 1))
 (defn ping [client]
-  (proxy [java.util.TimerTask] []
-    (run []
-      (let [output {:id (swap! msg-id inc), :type "ping"}]
-        (println "PING: " output)
-        (websock/send client :text output))))
+  (let [output {:id (swap! msg-id inc), :type "ping"}]
+    (println "PING: " output)
+    (send client :text output))
 )
 
-
-(defn connect [apikey slack-actions]
-  (try
-    (let [url (rtmStart apikey)]
-      (println "Connecting...")
-      (with-open [client (http/create-client)]
-        (let [ws (http/websocket client
-                                 url
-                                 :text #(handle-text %1 %2 slack-actions))]
-          (doto (new java.util.Timer true) (.schedule (ping client) 0 10000))
-          (loop [] 
-            (Thread/sleep 500)
-            (recur)))))
-    (catch java.io.IOException ex
-      (do
-        (println (.getMessage ex))
-        (System/exit 1))
-    )
-  )
-)
+(defn set-interval [callback ms] 
+  (future (while true (do (Thread/sleep ms) (callback)))))
 
 (defn send-msg [token channel msg]
   (with-open [client (http/create-client)]
@@ -86,4 +66,29 @@
         http/string)))
 )
 
+(defn schedule-ping [client]
+  (def tpool (at/mk-pool))
+  (at/every 10000 #(ping client) tpool)
+)
 
+(defn connect [apikey slack-actions]
+  (try
+    (let [url (rtmStart apikey)]
+      (println "Connecting...")
+      (def my-pool (at/mk-pool))
+      (with-open [client (http/create-client)]
+        (let [ws (http/websocket client
+                                 url
+                                 :open #(schedule-ping %1)
+				 :close #((send-msg (System/getenv "SLACK_TOKEN") (System/getenv "SLACK_CHANNEL") "Bye bye!"))
+                                 :text #(handle-text %1 %2 slack-actions))]
+          (loop [] 
+            (Thread/sleep 500)
+            (recur)))))
+    (catch java.io.IOException ex
+      (do
+        (println (.getMessage ex))
+        (System/exit 1))
+    )
+  )
+)
