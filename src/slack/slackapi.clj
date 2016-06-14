@@ -47,11 +47,10 @@
 (defn ping [client]
   (let [output {:id (swap! msg-id inc), :type "ping"}]
     (println "PING: " output)
-    (send client :text output))
+    (try
+      (http/send client :text (json/generate-string output))
+      (catch Exception e (.printStackTrace e))))
 )
-
-(defn set-interval [callback ms] 
-  (future (while true (do (Thread/sleep ms) (callback)))))
 
 (defn send-msg [token channel msg]
   (with-open [client (http/create-client)]
@@ -75,7 +74,6 @@
   (try
     (let [url (rtmStart apikey)]
       (println "Connecting...")
-      (def my-pool (at/mk-pool))
       (with-open [client (http/create-client)]
         (let [ws (http/websocket client
                                  url
